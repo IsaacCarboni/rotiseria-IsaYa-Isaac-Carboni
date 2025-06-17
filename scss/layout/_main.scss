@@ -1,0 +1,49 @@
+main img{
+width: 10rem;
+}
+
+ .img{
+  /*
+    text-decoration: aquamarine;
+  width: 100px;
+  height: auto;
+  border-radius: 5px;
+  */
+  @include headerImg(none,10rem ,10px ,auto );
+}
+/*Estilos Listas*/
+ul {
+  list-style-type: none;
+  padding-left: 0; 
+}
+li {
+  font-family: 'Arial', sans-serif;
+  font-size: 18px;
+  color: #333;
+  font-weight: bold;  
+}
+
+/*Estilos tarjetas*/
+.card{
+  background-color:$colorDefondoTarjetas;
+    border: 2px solid #83790b; 
+}
+form{
+@extend %blocksCentrados;
+}
+
+@media (max-width: 600px) {
+  .tarjeta {
+    width: 100%;       
+  }
+}
+
+.bg-body-tertiary {
+
+    --bs-bg-opacity: 1;
+    background-color: rgb(240 181 124) !important;
+}
+
+.card:hover{
+  border-color: aqua;
+}
